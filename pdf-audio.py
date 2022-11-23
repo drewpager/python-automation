@@ -1,7 +1,6 @@
 import pyttsx3,PyPDF2
 
 #Replace 'contract.pdf' with path to your PDF file (i.e. /Desktop/Contracts/contract.pdf)
-# /Users/drewpage/Desktop/Contracts/Smartsheet - Statement of Work (Siege Media).pdf
 pdfreader = PyPDF2.PdfFileReader(open('contract.pdf','rb'))
 reader = pyttsx3.init()
 for page in range(pdfreader.numPages):   
